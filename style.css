@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all elements */
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+main {
+  display: flex;
+}
+.sectionOne {
+  width: 280px;
+  height: 100%;
+  border: 1px solid black;
+  border-bottom: none;
+}
+h2 {
+  margin: 20px 0px 20px 20px;
+}
+.search {
+  width: 80%;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(114, 111, 111);
+}
+.category-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 130px;
+}
+.category {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.category span {
+  margin-left: 20px;
+}
+.subscription {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #edede9;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease; /* Fade-in animation */
+}
+.subscription img {
+  width: 150px;
+  height: 100px;
+  animation: bounce 2s infinite; /* Bouncing animation */
+}
+.subscription .btn {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 1px solid rgb(114, 111, 111);
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.subscription .btn:hover {
+  background-color: #005f8a;
+  transform: scale(1.05);
+}
+img {
+  width: 150px;
+  height: 100px;
+}
+.btn {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 1px solid rgb(114, 111, 111);
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: #005f8a; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+.sectionTwo {
+  width: 600px;
+  height: 100%;
+  padding-left: 30px;
+}
+h1 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.activity {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.options {
+  display: inline;
+  margin-left: 200px;
+}
+.options select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+.options select:hover {
+  border-color: #0077b6;
+  transform: scale(1.05);
+}
+.sectionTwo canvas {
+  margin-top: 20px;
+}
+.transactionHeader,
+.activityHeader {
+  width: 80%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.activity span {
+  font-size: 16px;
+}
+.weight {
+  font-weight: 200;
+}
+.transactions {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.transactions span {
+  font-size: 12px;
+}
+.transaction {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.transaction h4,
+span {
+  font-size: 10px;
+}
+.transaction:hover {
+  background-color: #edf6f9; /* Light blue on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+.transaction i {
+  font-size: 25px;
+  color: #0077b6;
+  transition: transform 0.3s ease;
+}
+.transaction:hover i {
+  transform: rotate(10deg); /* Slight rotation on hover */
+}
+.transactionSpecify {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product {
+  width: 150px;
+}
+.sectionThree {
+  width: 400px;
+  padding: 20px;
+}
+.sectionThree i {
+  font-size: 20px;
+}
+.bellProfile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.imgCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.investmentDollar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconOne,
+.iconTwo {
+  display: inline;
+  margin-right: 20px;
+}
+.investment h5 {
+  display: inline;
+}
+.rate {
+  width: 100px;
+  background-color: aliceblue;
+}
+.specialSpan {
+  font-size: 12px;
+  font-weight: 300;
+}
+.sectionThree canvas {
+  margin-top: 20px;
+  animation: fadeIn 1s ease; /* Fade-in animation for charts */
+}
+.activityHeader {
+  margin-top: 35px;
+}
+.circleContainer {
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  animation: scaleUp 1.5s ease-in-out infinite alternate; /* Scaling animation */
+}
+.circleOne {
+  background-color: #0077b6;
+  width: 180px;
+  height: 180px;
+  top: 10px;
+  right: 40px;
+}
+.circleTwo {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  right: 90px;
+  z-index: 2;
+}
+.circleThree {
+  background-color: rgb(183, 183, 191);
+  width: 120px;
+  height: 120px;
+  top: 100px;
+  left: 80px;
+  z-index: 1;
+}
+.circle h4 {
+  color: white;
+  font-size: 10px;
+}
+.circle span {
+  font-size: 12px;
+  color: white;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 768px) {
+  main {
+    flex-wrap: wrap;
+  }
+  .sectionOne {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .category-container {
+    margin-bottom: 50px;
+  }
+  .sectionTwo {
+    width: 100%;
+    padding-left: 0px;
+    margin-bottom: 30px;
+  }
+  .options {
+    margin-left: 100px;
+  }
+  .transaction {
+    transform: none; /* Disable hover lift effect on smaller screens */
+  }
+  .transaction i {
+    font-size: 20px;
+  }
+  .transaction h4 {
+    font-size: 14px;
+  }
+  .transactionSpecify {
+    width: 200px;
+  }
+  .circle {
+    animation: none; /* Disable scaling animation for circles on smaller screens */
+  }
+}

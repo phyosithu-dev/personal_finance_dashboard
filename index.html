@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://kit.fontawesome.com/df8716f54d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="sectionOne">
+        <h2>ofsp_ce</h2>
+        <input type="text" class="search" placeholder="Search..." />
+        <div class="category-container">
+          <div class="category">
+            <i class="fa-solid fa-gear"></i>
+            <span>Overview</span>
+          </div>
+          <div class="category">
+            <i class="fa-solid fa-piggy-bank"></i>
+            <span>Savings</span>
+          </div>
+          <div class="category">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <span>Investments</span>
+          </div>
+          <div class="category">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Wallet</span>
+          </div>
+          <div class="category">
+            <i class="fa-solid fa-server"></i>
+            <span>Services</span>
+          </div>
+        </div>
+        <div class="subscription">
+          <img src="images/illustration.svg" alt="illustration" />
+          <h5>Grow Your Savings Now!</h5>
+          <button class="btn">Become Pro</button>
+        </div>
+      </section>
+      <section class="sectionTwo">
+        <h1>Welcome back, Royal</h1>
+        <div class="activity">
+          <span>My Activity</span>
+          <div class="options">
+            <select name="income" id="option">
+              <option value="income">Income</option>
+            </select>
+            <select name="monthly" id="option">
+              <option value="monthly">Monthly</option>
+            </select>
+          </div>
+        </div>
+        <canvas width="400" height="200" id="lineChart"></canvas>
+        <div class="transactionHeader">
+          <span>Transactions</span>
+          <span class="weight">See All ></span>
+        </div>
+        <div class="transactions">
+          <div class="transaction">
+            <div class="transactionSpecify">
+              <i class="fa-solid fa-burger"></i>
+              <div class="product">
+                <h4>MacDonald's</h4>
+                <span>Cafe and restaurant</span>
+              </div>
+            </div>
+            <span>07 August 2022</span>
+            <h4>-$340.56</h4>
+          </div>
+          <div class="transaction">
+            <div class="transactionSpecify">
+              <i class="fa-brands fa-dropbox"></i>
+              <div class="product">
+                <h4>Dropbox</h4>
+                <span>subscription</span>
+              </div>
+            </div>
+            <span>06 August 2022</span>
+            <h4>-$122.00</h4>
+          </div>
+          <div class="transaction">
+            <div class="transactionSpecify">
+              <i class="fa-solid fa-users-viewfinder"></i>
+              <div class="product">
+                <h4>Dropbox</h4>
+                <span>Entertainment</span>
+              </div>
+            </div>
+            <span>05 August 2022</span>
+            <h4>-$145.00</h4>
+          </div>
+        </div>
+      </section>
+      <section class="sectionThree">
+        <div class="bellProfile">
+          <i class="fa-solid fa-bell"></i>
+          <img src="images/profile.jpg" class="imgCircle" alt="profile" />
+        </div>
+        <div class="investmentDollar">
+          <div class="investment">
+            <h3>Investments</h3>
+            <div class="iconOne">
+              <i class="fa-solid fa-square" style="color: #74c0fc"></i>
+              <h5>Bond</h5>
+            </div>
+            <div class="iconTwo">
+              <i class="fa-solid fa-square"></i>
+              <h5>Stock</h5>
+            </div>
+          </div>
+
+          <div class="dollar">
+            <h4>$14,050</h4>
+            <div class="rate">
+              <span class="specialSpan">+$85.292/+21%</span>
+            </div>
+          </div>
+        </div>
+        <canvas id="barChart" width="400" height="250"></canvas>
+        <div class="activityHeader">
+          <span>Top Activity</span>
+          <span class="weight">More ></span>
+        </div>
+        <div class="circleContainer">
+            <div class="circle circleOne">
+                <h4>$235.00</h4>
+                <span class="weight">Restaurant</span>
+            </div>
+            <div class="circle circleTwo">
+                <h4>$20.00</h4>
+                <span class="weight">Food</span>
+            </div>
+            <div class="circle circleThree">
+                <h4>$145.00</h4>
+                <span class="weight">Home Rent</span>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
